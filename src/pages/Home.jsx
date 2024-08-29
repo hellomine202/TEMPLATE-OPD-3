@@ -1,4 +1,8 @@
 import React from 'react';
+import usergroupicon from '/src/assets/icons/user-group.svg';
+import knowledgeicon from '/src/assets/icons/knowledge.svg';
+import reporticon from '/src/assets/icons/report-analysis.svg';
+import newsicon from '/src/assets/icons/pr.svg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBook, faNewspaper, faHandsHelping, faBuilding, faDollarSign, faFlag } from '@fortawesome/free-solid-svg-icons';
 
@@ -35,27 +39,27 @@ export default function Home() {
           {/* Button Group */}
           <div className="flex justify-center space-x-4">
             {/* Buttons for navigation */}
-            <button className="bg-white bg-opacity-80 hover:bg-opacity-100 p-4 rounded-lg shadow-md">
-              <FontAwesomeIcon icon={faBook} className="h-10 mx-auto mb-2 text-blue-900" />
+            <button className="bg-white bg-opacity-80 hover:bg-opacity-100 p-4 rounded-lg shadow-md w-24 h-32 flex flex-col items-center justify-center">
+            <img src={reporticon} alt="User Group" style={{ height: '40px', width: 'auto' }} className="mx-auto mb-2" />
               <span className="text-blue-900 font-semibold">Sejarah</span>
             </button>
-            <button className="bg-white bg-opacity-80 hover:bg-opacity-100 p-4 rounded-lg shadow-md">
-              <FontAwesomeIcon icon={faNewspaper} className="h-10 mx-auto mb-2 text-blue-900" />
+            <button className="bg-white bg-opacity-80 hover:bg-opacity-100 p-4 rounded-lg shadow-md w-24 h-32 flex flex-col items-center justify-center">
+            <img src={newsicon} alt="School" className="h-10 mx-auto mb-2" />
               <span className="text-blue-900 font-semibold">Berita</span>
             </button>
-            <button className="bg-white bg-opacity-80 hover:bg-opacity-100 p-4 rounded-lg shadow-md">
+            <button className="bg-white bg-opacity-80 hover:bg-opacity-100 p-4 rounded-lg shadow-md w-24 h-32 flex flex-col items-center justify-center">
               <FontAwesomeIcon icon={faHandsHelping} className="h-10 mx-auto mb-2 text-blue-900" />
               <span className="text-blue-900 font-semibold">Layanan</span>
             </button>
-            <button className="bg-white bg-opacity-80 hover:bg-opacity-100 p-4 rounded-lg shadow-md">
+            <button className="bg-white bg-opacity-80 hover:bg-opacity-100 p-4 rounded-lg shadow-md w-24 h-32 flex flex-col items-center justify-center">
               <FontAwesomeIcon icon={faBuilding} className="h-10 mx-auto mb-2 text-blue-900" />
               <span className="text-blue-900 font-semibold">Instansi</span>
             </button>
-            <button className="bg-white bg-opacity-80 hover:bg-opacity-100 p-4 rounded-lg shadow-md">
+            <button className="bg-white bg-opacity-80 hover:bg-opacity-100 p-4 rounded-lg shadow-md w-24 h-32 flex flex-col items-center justify-center">
               <FontAwesomeIcon icon={faDollarSign} className="h-10 mx-auto mb-2 text-blue-900" />
               <span className="text-blue-900 font-semibold">Keuangan</span>
             </button>
-            <button className="bg-white bg-opacity-80 hover:bg-opacity-100 p-4 rounded-lg shadow-md">
+            <button className="bg-white bg-opacity-80 hover:bg-opacity-100 p-4 rounded-lg shadow-md w-24 h-32 flex flex-col items-center justify-center">
               <FontAwesomeIcon icon={faFlag} className="h-10 mx-auto mb-2 text-blue-900" />
               <span className="text-blue-900 font-semibold">Lapor</span>
             </button>
